@@ -1,0 +1,10 @@
+<!-- book-list.component.html -->
+
+<div *ngFor="let book of books">
+    <app-book-item [book]="book" (edit)="onEdit($event)" (delete)="onDelete($event)"></app-book-item>
+</div>
+
+<!-- <div>
+    Thanks
+</div> -->
+
